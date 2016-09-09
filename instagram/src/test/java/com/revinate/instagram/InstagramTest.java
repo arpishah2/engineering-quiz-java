@@ -1,9 +1,6 @@
 package com.revinate.instagram;
-
 import org.junit.Test;
-
 import java.util.List;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -31,7 +28,7 @@ public class InstagramTest {
         assertThat(feed.get(2), is(1092));
         assertThat(feed.get(3), is(1135));
         assertThat(feed.get(4), is(1025));
-
+        
         instagram.unfollow(1, 3);
 
         List<Integer> feed_2 = instagram.getMediaFeed(1);
