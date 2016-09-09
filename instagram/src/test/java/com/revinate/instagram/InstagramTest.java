@@ -34,6 +34,6 @@ public class InstagramTest {
         List<Integer> feed_2 = instagram.getMediaFeed(1);
         assertThat(feed_2.get(0), is(1022));
         assertThat(feed_2.get(1), is(1135));
-        assertThat(feed_2.get(2), is(1025));
+        assertThat(feed_2.get(2), is(1025)); 
     }
 }
